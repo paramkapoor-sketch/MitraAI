@@ -1,38 +1,42 @@
-# Home Price Prediction - C# ML.NET
+# Home Price Prediction - ML Project
 
-Python to C# conversion using ML.NET and ASP.NET Core with Gradio-like web interface.
+This project contains both Python and C# implementations of a home price prediction model.
+
+## Project Structure
+
+```
+├── csharp-version/          # ✨ C# ML.NET Implementation
+│   ├── README.md           # Complete C# setup instructions  
+│   ├── HomePricesTrain.cs  # Training script
+│   ├── HomePricesML.csproj # Training project
+│   └── webapp/             # Web application
+│       ├── Program.cs      # API backend
+│       ├── Controllers/    # REST endpoints
+│       └── wwwroot/        # Gradio-like interface
+├── 0_home_prices_train.py  # Original Python training
+├── 1_home_prices_deploy.py # Original Python Gradio app
+└── ../data/train.csv       # Training data
+```
 
 ## Quick Start
 
-### 1. Install .NET
+### Python Version (Original)
 ```bash
-brew install --cask dotnet-sdk
+python 0_home_prices_train.py   # Train model
+python 1_home_prices_deploy.py  # Launch Gradio app
 ```
 
-### 2. Train Model
+### C# Version (Converted)
 ```bash
-dotnet run --project HomePricesML.csproj
+cd csharp-version/
+# See README.md for full instructions
 ```
-Creates `model.zip` 
 
-### 3. Run Web App
-```bash
-dotnet run --project HomePricesWebApp.csproj
-```
-Opens http://localhost:5000
+## C# Advantages
 
-## What You Get
+- **Better Performance**: ML.NET optimized for .NET
+- **Production Ready**: ASP.NET Core web framework
+- **Enterprise Support**: Full Microsoft ecosystem
+- **Type Safety**: Strong typing throughout
 
-- **ML Training**: R-squared 0.8121, processes `../data/train.csv`
-- **Web Interface**: Gradio-like sliders for 7 house features
-- **REST API**: `/api/prediction/predict` endpoint
-- **Production Ready**: ASP.NET Core deployment
-
-## Files
-
-- `HomePricesTrain.cs` - Training script (ML.NET)
-- `HomePricesWebApp.csproj` - Web app
-- `Program.cs` - API backend  
-- `wwwroot/index.html` - Frontend
-
-Perfect Python Gradio alternative for .NET!
+The C# version provides equivalent functionality with a beautiful web interface similar to Gradio!
