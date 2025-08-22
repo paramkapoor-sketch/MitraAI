@@ -44,9 +44,8 @@ iface = gr.Interface(
     title="Modern AI Pro: Home Price Prediction Model",
     description="Adjust the sliders to predict the home prices."
 )
-\ddd
 
 # Launch the app to the world
 # https://www.gradio.app/guides/running-gradio-on-your-web-server-with-nginx
-iface.launch(share=True)
+iface.launch(share=False)
 
