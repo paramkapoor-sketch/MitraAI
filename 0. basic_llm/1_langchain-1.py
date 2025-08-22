@@ -3,7 +3,7 @@
 # conda activate modernaipro
 
 from langchain_community.llms import Ollama
-llm = Ollama(model="gemma2:2b") # try qwen2 / llama3 if you have that model
+llm = Ollama(model="deepseek-r1:1.5b") # try qwen2 / llama3 if you have that model
 
 
 for chunks in llm.stream("How to make a pizza?"):

@@ -1,0 +1,69 @@
+{
+  "name": "2. intermediate_llm",
+  "path": "/Users/balajiviswanathan/Code/modernaipro/mai-public/modernaipro/2. intermediate_llm",
+  "fileTree": [
+    {
+      "name": "2. intermediate_llm",
+      "path": "/Users/balajiviswanathan/Code/modernaipro/mai-public/modernaipro/2. intermediate_llm",
+      "type": "directory",
+      "children": [
+        {
+          "name": "1_langserve-server.py",
+          "path": "/Users/balajiviswanathan/Code/modernaipro/mai-public/modernaipro/2. intermediate_llm/1_langserve-server.py",
+          "type": "file"
+        },
+        {
+          "name": "2_langserve-client.py",
+          "path": "/Users/balajiviswanathan/Code/modernaipro/mai-public/modernaipro/2. intermediate_llm/2_langserve-client.py",
+          "type": "file"
+        },
+        {
+          "name": "__pycache__",
+          "path": "/Users/balajiviswanathan/Code/modernaipro/mai-public/modernaipro/2. intermediate_llm/__pycache__",
+          "type": "directory"
+        },
+        {
+          "name": "mlartifacts",
+          "path": "/Users/balajiviswanathan/Code/modernaipro/mai-public/modernaipro/2. intermediate_llm/mlartifacts",
+          "type": "directory"
+        },
+        {
+          "name": "mlruns",
+          "path": "/Users/balajiviswanathan/Code/modernaipro/mai-public/modernaipro/2. intermediate_llm/mlruns",
+          "type": "directory"
+        },
+        {
+          "name": "optional_mlflow-llm.py",
+          "path": "/Users/balajiviswanathan/Code/modernaipro/mai-public/modernaipro/2. intermediate_llm/optional_mlflow-llm.py",
+          "type": "file"
+        },
+        {
+          "name": "professionalism_metric.py",
+          "path": "/Users/balajiviswanathan/Code/modernaipro/mai-public/modernaipro/2. intermediate_llm/professionalism_metric.py",
+          "type": "file"
+        }
+      ]
+    }
+  ],
+  "recentFiles": [],
+  "lastOpenedFiles": {},
+  "panels": {
+    "leftPanelWidth": "300px",
+    "rightPanelWidth": "300px",
+    "bottomPanelHeight": "190px",
+    "leftPanelCollapsed": false,
+    "rightPanelCollapsed": false,
+    "bottomPanelCollapsed": false
+  },
+  "metadata": {
+    "createdAt": "2025-04-17T07:45:24.643Z",
+    "lastModified": "2025-04-17T07:49:17.605Z",
+    "backwardsBuildProgress": 0,
+    "description": ""
+  },
+  "git": {
+    "isGitRepository": false,
+    "repositoryName": null,
+    "currentBranch": null
+  }
+}

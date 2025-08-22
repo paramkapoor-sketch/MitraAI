@@ -1,0 +1,76 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#2C2F33"/>
+
+  <!-- Main Structure -->
+  <rect x="10" y="10" width="780" height="580" rx="15" ry="15" fill="#36393F"/>
+
+  <!-- Header -->
+  <rect x="10" y="10" width="780" height="50" rx="15" ry="15" fill="#202225"/>
+  <path d="M 10 25 Q 10 10 25 10 L 775 10 Q 790 10 790 25 L 790 60 L 10 60 Z" fill="#202225"/>
+  <text x="400" y="42" fill="#FFFFFF" font-size="18" text-anchor="middle" font-weight="bold">Chat Group Name</text>
+  <!-- Optional: Window controls (like macOS) -->
+  <circle cx="35" cy="35" r="7" fill="#FF5F57"/>
+  <circle cx="60" cy="35" r="7" fill="#FEBC2E"/>
+  <circle cx="85" cy="35" r="7" fill="#28C840"/>
+
+  <!-- Vertical Divider -->
+  <line x1="550" y1="60" x2="550" y2="590" stroke="#202225" stroke-width="2"/>
+
+  <!-- Chat Area (Left) -->
+  <g id="chat-messages">
+    <!-- Message 1 (Incoming) -->
+    <rect x="30" y="80" width="250" height="60" rx="10" ry="10" fill="#4F545C"/>
+    <text x="45" y="105" fill="#DCDDDE" font-size="14">User A: Hey there! How's it going?</text>
+    <text x="45" y="125" fill="#A0A3A7" font-size="11">10:30 AM</text>
+
+    <!-- Message 2 (Outgoing) -->
+    <rect x="280" y="155" width="250" height="80" rx="10" ry="10" fill="#5865F2"/>
+    <text x="295" y="180" fill="#FFFFFF" font-size="14">You: Pretty good! Just working on</text>
+    <text x="295" y="200" fill="#FFFFFF" font-size="14">this SVG mockup. You?</text>
+    <text x="480" y="220" fill="#D0D4F0" font-size="11" text-anchor="end">10:31 AM</text>
+
+    <!-- Message 3 (Incoming) -->
+    <rect x="30" y="250" width="180" height="40" rx="10" ry="10" fill="#4F545C"/>
+    <text x="45" y="275" fill="#DCDDDE" font-size="14">User A: Cool! Same here.</text>
+    <text x="45" y="295" fill="#A0A3A7" font-size="11">10:32 AM</text>
+  </g>
+
+  <!-- Message Input Area -->
+  <g id="message-input">
+    <rect x="30" y="520" width="450" height="50" rx="10" ry="10" fill="#40444B"/>
+    <text x="45" y="552" fill="#72767D" font-size="15">Type a message...</text>
+    <!-- Placeholder for Send Button/Icon -->
+    <circle cx="510" cy="545" r="18" fill="#5865F2"/>
+    <polygon points="505,540 518,545 505,550" fill="#FFFFFF" />
+     <!-- Placeholder for Attachment Icon -->
+    <circle cx="465" cy="545" r="10" fill="#72767D"/>
+     <line x1="465" y1="540" x2="465" y2="550" stroke="#40444B" stroke-width="2"/>
+     <line x1="460" y1="545" x2="470" y2="545" stroke="#40444B" stroke-width="2"/>
+  </g>
+
+  <!-- Sidebar (Right) -->
+  <g id="sidebar">
+    <text x="675" y="90" fill="#B9BBBE" font-size="14" text-anchor="middle" font-weight="bold">PARTICIPANTS - 3</text>
+
+    <!-- Participant 1 -->
+    <circle cx="580" cy="130" r="15" fill="#43B581"/> <!-- Online status -->
+    <text x="610" y="135" fill="#DCDDDE" font-size="15">You</text>
+
+    <!-- Participant 2 -->
+    <circle cx="580" cy="170" r="15" fill="#43B581"/> <!-- Online status -->
+    <text x="610" y="175" fill="#DCDDDE" font-size="15">User A</text>
+
+    <!-- Participant 3 -->
+    <circle cx="580" cy="210" r="15" fill="#747F8D"/> <!-- Offline status -->
+    <text x="610" y="215" fill="#72767D" font-size="15">Offline User</text>
+
+     <!-- Placeholder for other sidebar items -->
+     <line x1="565" y1="245" x2="780" y2="245" stroke="#40444B" stroke-width="1"/>
+     <text x="575" y="270" fill="#B9BBBE" font-size="14">📌 Pinned Messages</text>
+     <text x="575" y="300" fill="#B9BBBE" font-size="14">🖼️ Shared Media</text>
+
+  </g>
+
+</svg>
