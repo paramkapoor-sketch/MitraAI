@@ -1,6 +1,28 @@
+# Core dependencies
 streamlit
 requests
-duckduckgo-search
-langchain-groq
 python-dotenv
+
+# Search & News
+duckduckgo-search
 tavily-python
+
+# LLM Providers
+langchain-groq
+openai
+
+# Framework 1: Strands Agents (AWS)
+strands-agents
+strands-agents-tools
+
+# Framework 2: CrewAI
+crewai
+crewai-tools
+
+# Framework 3: LangGraph
+langgraph
+langchain
+langchain-core
+
+# Technical Analysis (for stock analyzer)
+pandas
