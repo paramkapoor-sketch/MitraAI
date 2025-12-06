@@ -1,41 +1,17 @@
 #!/bin/bash
 
-echo "Setting up C# Home Price Prediction Web App..."
-
-# Check if dotnet is installed
-if ! command -v dotnet &> /dev/null; then
-    echo "dotnet is not installed. Please install it using:"
-    echo "brew install --cask dotnet-sdk"
-    exit 1
-fi
-
-echo "dotnet is installed. Version:"
-dotnet --version
-
-# Navigate to project directory
-cd "$(dirname "$0")"
+echo "Starting Home Price Prediction Web App..."
 
 # Check if model exists
 if [ ! -f "model.zip" ]; then
-    echo "Model file 'model.zip' not found. Please run the training script first:"
-    echo "dotnet run --project HomePricesML.csproj"
+    echo "❌ Model file 'model.zip' not found!"
+    echo "Please train the model first:"
+    echo "  dotnet run"
     exit 1
 fi
 
-# Create Controllers directory if it doesn't exist
-mkdir -p Controllers
-mkdir -p wwwroot
-
-# Restore packages
-echo "Restoring packages..."
-dotnet restore HomePricesWebApp.csproj
-
-# Build the project
-echo "Building project..."
-dotnet build HomePricesWebApp.csproj
-
-# Run the web application
-echo "Starting web application..."
-echo "Open your browser to: https://localhost:5001 or http://localhost:5000"
+echo "✅ Model found. Starting web application..."
+cd webapp/
+echo "🌐 Opening web interface at http://localhost:5002"
 echo "Press Ctrl+C to stop the server"
-dotnet run --project HomePricesWebApp.csproj
+dotnet run --urls "http://localhost:5002"

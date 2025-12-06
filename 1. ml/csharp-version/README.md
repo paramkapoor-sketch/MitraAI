@@ -17,10 +17,15 @@ Creates `model.zip`
 
 ### 3. Run Web App
 ```bash
-cd webapp/
-dotnet run --project HomePricesWebApp.csproj
+./run-webapp.sh
 ```
-Opens http://localhost:5000
+Opens http://localhost:5002
+
+**Or manually:**
+```bash
+cd webapp/
+dotnet run --urls "http://localhost:5002"
+```
 
 ## What You Get
 
